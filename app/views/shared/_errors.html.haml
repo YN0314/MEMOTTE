@@ -1,0 +1,5 @@
+- if errors.any?
+  - errors.full_messages.each do |msg|
+    .alert.alert-danger
+      %button.close(data-dismiss="alert") &times;
+      = msg
