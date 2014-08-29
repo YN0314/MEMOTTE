@@ -29,7 +29,7 @@ gem 'draper'
 # Images
 # gem 'paperclip'
 
-# Async & Bach
+# Async & Batch
 # gem 'sidekiq'
 # gem 'sidekiq-cron'
 # gem 'sinatra', require: false
@@ -42,7 +42,7 @@ group :production do
   # gem 'exception_notification'
 end
 
-group :development, :test do
+group :development do
   gem 'spring'
   gem 'bullet'
   gem 'better_errors'

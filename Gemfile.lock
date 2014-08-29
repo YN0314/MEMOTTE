@@ -90,7 +90,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.6.0)
-    minitest (5.4.0)
+    minitest (5.4.1)
     multi_json (1.10.1)
     mysql2 (0.3.16)
     nokogiri (1.6.3.1)
@@ -174,65 +174,6 @@ GEM
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
       polyglot (>= 0.3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
