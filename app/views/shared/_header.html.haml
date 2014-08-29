@@ -1,0 +1,30 @@
+%header.container
+  %nav.navbar.navbar-default{role: "navigation"}
+    .navbar-header
+      %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".target")
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "MEMOTTE", "/", class: "navbar-brand"
+
+    .collapse.navbar-collapse.target
+      %ul.nav.navbar-nav
+        %li.dropdown
+          %a.dropdown-toggle(href="javascript:void(0)" data-toggle="dropdown")
+            Links1
+            %b.caret
+          %ul.dropdown-menu
+            %li= link_to "link1", ""
+            %li= link_to "link2", ""
+            %li= link_to "link3", ""
+
+      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dropdown-toggle(data-toggle="dropdown" href="javascript:void(0)")
+            Links2
+            %b.caret
+          %ul.dropdown-menu
+            %li= link_to "link4", ""
+            %li= link_to "link5", ""
+            %li= link_to "link6", ""
