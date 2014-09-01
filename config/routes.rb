@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  controller :memotte do
+    root to: :index
+    get :mypage, to: :mypage
+  end
 
-  root 'memotte#index'
-  match '/mypage', to: 'memotte#mypage', via: 'get'
-  match '/signup', to: 'users#new', via: 'get'
+  controller :users do
+    get :signup, to: :new
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
