@@ -9,13 +9,19 @@ class UsersController < ApplicationController
   end
 
   def create
-  	@user = User.new(user_params)
-  	if @user.save
-  		flash[:success]="Welcome to the Sample App!"
-  		redirect_to @user
-  	else
-  		render 'new'
-  	end
+    begin
+      @user = User.new
+      @user.name = params[:user][:name]
+      @user.email = params[:user][:email]
+      password = @user.set_password
+      Rails.logger.info password
+
+      if @user.save
+        redirect_to root_path, notice: "ユーザを作成しました"
+       else
+        render :new
+      end
+    end
   end
 
   private

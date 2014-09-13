@@ -25,6 +25,7 @@ gem 'kaminari'
 
 # Decorator
 gem 'draper'
+gem 'passwd'
 
 # Images
 # gem 'paperclip'
