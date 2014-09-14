@@ -15,14 +15,12 @@ class UsersController < ApplicationController
       @user.email = params[:user][:email]
       password = @user.set_password
       Rails.logger.info password
-    end
 
-    if @user.save
-      sign_in @user
-      flash[:success] = "Welcome to the MEMOTTE!"
-      redirect_to @user
-    else
-      render :new
+      if @user.save
+        redirect_to root_path, notice: "ユーザを作成しました"
+       else
+        render :new
+      end
     end
   end
 
