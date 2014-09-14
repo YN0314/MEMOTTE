@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resource :users
+  resource :sessions, only: [:new, :create, :destroy]
   controller :memotte do
     root to: :index
     get :mypage, to: :mypage
@@ -8,6 +9,11 @@ Rails.application.routes.draw do
   controller :users do
     get :signup, to: :new
     get :show, to: :show
+  end
+
+  controller :sessions do
+    get :signin, to: :new
+    delete :signout, to: :destroy
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
