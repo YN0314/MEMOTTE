@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :articles
+
   controller :memotte do
     root to: :index
     get :mypage, to: :mypage
