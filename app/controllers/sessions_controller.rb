@@ -1,8 +1,6 @@
 class SessionsController < ApplicationController
   skip_before_action :require_signin
-
-  def new
-  end
+  layout false
 
   def create
     @user = User.authenticate(params[:email], params[:password])
@@ -11,7 +9,7 @@ class SessionsController < ApplicationController
       session[:user] = @user.id
       redirect_to mypage_path
     else
-      flash.now[:alart] = "Fail login"
+      flash.now[:alert] = "Fail login"
       render action: :new
     end
   end
