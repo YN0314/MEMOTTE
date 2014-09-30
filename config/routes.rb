@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   end
 
   controller :sessions do
-    get :signup,  to: :new
+    get :signin, to: :new
     post :signin, to: :create, as: :session_create
     get :signout, to: :destroy
   end
