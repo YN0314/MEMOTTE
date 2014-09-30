@@ -2,18 +2,18 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  # controller :memotte do
-  #   root to: :index
-  #   get :mypage, to: :mypage
-  # end
+  controller :memotte do
+    root to: :index
+    get :mypage, to: :mypage
+  end
 
   controller :users do
-    get :signup,  to: :new
+    get :signup, to: :new
     get :show, to: :show, as: :user_home
   end
 
   controller :sessions do
-    root to: :new, as: :signin
+    get :signup,  to: :new
     post :signin, to: :create, as: :session_create
     get :signout, to: :destroy
   end
