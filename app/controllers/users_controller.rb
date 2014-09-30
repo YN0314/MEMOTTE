@@ -8,6 +8,9 @@ class UsersController < ApplicationController
   	@user = User.new
   end
 
+  def index
+  end
+
   def create
     begin
       @user = User.new
@@ -22,6 +25,15 @@ class UsersController < ApplicationController
         render :new
       end
     end
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
   private
