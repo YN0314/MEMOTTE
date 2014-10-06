@@ -4,9 +4,10 @@
   %tr
     %th Name
     %th E-mail
+    %th Role
 
-  - @users=User.all
   - @users.each do |user|
     %tr
       %td= user.name
       %td= user.email
+      %td= user.role
