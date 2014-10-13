@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if @user
       session[:user] = @user.id
-      redirect_to mypage_path
+      redirect_to user_home_path
     else
       flash.now[:alert] = "Fail login"
       render action: :new
