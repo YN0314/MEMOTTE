@@ -8,12 +8,17 @@ class UsersController < ApplicationController
   	@user = User.new
   end
 
+  def index
+    @users = User.all
+  end
+
   def create
     begin
       @user = User.new
       @user.name = params[:user][:name]
       @user.email = params[:user][:email]
       password = @user.set_password
+      @user.role = params[:user][:role]
       Rails.logger.info password
 
       if @user.save
@@ -22,6 +27,15 @@ class UsersController < ApplicationController
         render :new
       end
     end
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
   private

@@ -1,0 +1,13 @@
+%h1 User List
+
+%table{class: "table table-striped table-hover table-condensed table-condensed"}
+  %tr
+    %th Name
+    %th E-mail
+    %th Role
+
+  - @users.each do |user|
+    %tr
+      %td= user.name
+      %td= user.email
+      %td= user.role

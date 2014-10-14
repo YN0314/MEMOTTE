@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   controller :users do
+    get :users, to: :index
     get :signup, to: :new
     get :show, to: :show, as: :user_home
   end
