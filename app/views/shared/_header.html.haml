@@ -14,10 +14,17 @@
           %a.dropdown-toggle(href="javascript:void(0)" data-toggle="dropdown")
             Sessions
             %b.caret
-          %ul.dropdown-menu
-            %li= link_to "Articles", articles_path
-            %li= link_to "User List", users_path
-            %li= link_to "link3", ""
+
+          - if current_user.role == 0 then
+            %ul.dropdown-menu
+              %li= link_to "Articles", articles_path
+              %li= link_to "link2", ""
+              %li= link_to "link3", ""
+          - else
+            %ul.dropdown-menu
+              %li= link_to "Articles", articles_path
+              %li= link_to "User List", users_path
+              %li= link_to "link3", ""
 
       %ul.nav.navbar-nav.navbar-right
         -# %li
