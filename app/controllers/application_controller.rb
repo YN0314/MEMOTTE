@@ -17,4 +17,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def require_admin
+    unless current_user.role == 1
+      redirect_to mypage_path
+    end
+  end
 end

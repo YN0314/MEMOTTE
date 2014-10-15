@@ -4,12 +4,12 @@ Rails.application.routes.draw do
 
   controller :memotte do
     root to: :index
-    get :mypage, to: :mypage
+    get :mypage, to: :mypage, as: :mypage
   end
 
   controller :users do
     get :users, to: :index
-    get :signup, to: :new
+    get :signup, to: :new, as: :signup
     get :show, to: :show, as: :user_home
   end
 
