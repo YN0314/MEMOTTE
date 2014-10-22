@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       Rails.logger.info password
 
       if @user.save
-        redirect_to root_path, notice: "ユーザを作成しました"
+        redirect_to root_path , notice: "ユーザを作成しました"
        else
         render :new
       end

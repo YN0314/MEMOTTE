@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   resources :articles
 
   controller :memotte do
-    root to: :index
-    get :mypage, to: :mypage, as: :mypage
+    root to: :mypage
   end
 
   controller :users do
     get :users, to: :index
+    post :users, to: :create
     get :signup, to: :new, as: :signup
     get :show, to: :show, as: :user_home
   end
