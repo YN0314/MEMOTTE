@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     post :users, to: :create
     get :signup, to: :new, as: :signup
     get :show, to: :show, as: :user_home
+    get :edit, to: :edit, as: :edit_user
+    delete :users, to: :destroy
   end
 
   controller :sessions do

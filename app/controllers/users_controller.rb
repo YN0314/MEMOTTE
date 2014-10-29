@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_action :require_admin
   
   def show
-    # @user = User.find(params[:id])
   end
 
   def new
@@ -37,6 +36,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user.destroy
+    respond_to do |format|
+      redirect_to root_path
+    end
   end
 
   private
@@ -44,4 +47,5 @@ class UsersController < ApplicationController
   	def user_params
   		params.require(:user).permit(:name, :email, :password, :password_confirmation)
   	end
+
 end

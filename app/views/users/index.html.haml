@@ -5,12 +5,16 @@
     %th Name
     %th E-mail
     %th Role
+    %th 
+    %th 
 
   - @users.each do |user|
     %tr
       %td= user.name
       %td= user.email
       %td= user.role
+      %td= link_to 'Edit', edit_user_path(user)
+      %td= link_to 'Destroy', users_path, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
