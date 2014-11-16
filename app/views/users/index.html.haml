@@ -2,12 +2,22 @@
 
 %table{class: "table table-striped table-hover table-condensed table-condensed"}
   %tr
+    %th ID
     %th Name
     %th E-mail
     %th Role
+    %th 
+    %th 
 
   - @users.each do |user|
     %tr
+      %td= user.id
       %td= user.name
       %td= user.email
       %td= user.role
+      %td= link_to 'Edit', edit_user_path(user)
+      %td= link_to 'Destroy', users_path(:id => user.id), :method => :delete, :data => { :confirm => '本当に削除してよろしいですか?' }
+
+%br
+
+= link_to 'Create New User', signup_path
