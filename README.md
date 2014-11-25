@@ -26,3 +26,5 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/YN0314/MEMOTTE?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
